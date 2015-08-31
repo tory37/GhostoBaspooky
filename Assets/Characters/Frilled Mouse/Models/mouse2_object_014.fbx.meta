@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 92a92ecb35c6554429f91b3983b49229
+timeCreated: 1438657860
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: control
+    100004: eye.L
+    100006: eye.L_end
+    100008: eye.R
+    100010: eye.R_end
+    100012: eyeEmo
+    100014: eyeEmo_end
+    100016: eyeTarget
+    100018: eyeTarget.L
+    100020: eyeTarget.R
+    100022: flaps
+    100024: flaps_end
+    100026: head
+    100028: lowerBody
+    100030: mouse
+    100032: //RootNode
+    100034: mouth
+    100036: mouth_end
+    100038: mouthShape
+    100040: mouthShape_end
+    100042: nose
+    100044: tail.001
+    100046: tail.002
+    100048: tail.003
+    100050: tail.004
+    100052: tail.004_end
+    100054: tailIK
+    100056: tailIK_end
+    100058: upperBody
+    400000: Armature
+    400002: control
+    400004: eye.L
+    400006: eye.L_end
+    400008: eye.R
+    400010: eye.R_end
+    400012: eyeEmo
+    400014: eyeEmo_end
+    400016: eyeTarget
+    400018: eyeTarget.L
+    400020: eyeTarget.R
+    400022: flaps
+    400024: flaps_end
+    400026: head
+    400028: lowerBody
+    400030: mouse
+    400032: //RootNode
+    400034: mouth
+    400036: mouth_end
+    400038: mouthShape
+    400040: mouthShape_end
+    400042: nose
+    400044: tail.001
+    400046: tail.002
+    400048: tail.003
+    400050: tail.004
+    400052: tail.004_end
+    400054: tailIK
+    400056: tailIK_end
+    400058: upperBody
+    4300000: mouse
+    7400000: Armature|atkCycle
+    7400002: Armature|idle
+    7400004: Armature|test
+    7400006: Armature|walkCycle
+    9500000: //RootNode
+    13700000: mouse
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

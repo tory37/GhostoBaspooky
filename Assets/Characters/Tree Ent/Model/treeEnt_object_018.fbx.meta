@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: c29fb44b1b4f8a0488e315e89993e110
+timeCreated: 1434672977
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: armIK.L
+    100004: armIK.R
+    100006: brow-angry-sad
+    100008: browTarget
+    100010: control
+    100012: elbow.L
+    100014: elbow.R
+    100016: eye.L
+    100018: eye.R
+    100020: eyeLid.L
+    100022: eyeLid.R
+    100024: eyeTarget
+    100026: eyeTarget.L
+    100028: eyeTarget.R
+    100030: head
+    100032: jaw
+    100034: knee.L
+    100036: knee.R
+    100038: legIK.L
+    100040: legIK.R
+    100042: lowerArm.L
+    100044: lowerArm.R
+    100046: lowerBody
+    100048: lowerLeg.L
+    100050: lowerLeg.R
+    100052: mouth.place
+    100054: mouth.size
+    100056: mouth.smile.frown
+    100058: treeEnt
+    100060: //RootNode
+    100062: upperArm.L
+    100064: upperArm.R
+    100066: upperBody
+    100068: upperLeg.L
+    100070: upperLeg.R
+    400000: Armature
+    400002: armIK.L
+    400004: armIK.R
+    400006: brow-angry-sad
+    400008: browTarget
+    400010: control
+    400012: elbow.L
+    400014: elbow.R
+    400016: eye.L
+    400018: eye.R
+    400020: eyeLid.L
+    400022: eyeLid.R
+    400024: eyeTarget
+    400026: eyeTarget.L
+    400028: eyeTarget.R
+    400030: head
+    400032: jaw
+    400034: knee.L
+    400036: knee.R
+    400038: legIK.L
+    400040: legIK.R
+    400042: lowerArm.L
+    400044: lowerArm.R
+    400046: lowerBody
+    400048: lowerLeg.L
+    400050: lowerLeg.R
+    400052: mouth.place
+    400054: mouth.size
+    400056: mouth.smile.frown
+    400058: treeEnt
+    400060: //RootNode
+    400062: upperArm.L
+    400064: upperArm.R
+    400066: upperBody
+    400068: upperLeg.L
+    400070: upperLeg.R
+    4300000: treeEnt
+    7400000: Armature|atkCycle
+    7400002: Armature|firstJump
+    7400004: Armature|hover
+    7400006: Armature|hurt
+    7400008: Armature|Idle
+    7400010: Armature|land
+    7400012: Armature|runCycle
+    7400014: Armature|walkCycle
+    9500000: //RootNode
+    13700000: treeEnt
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

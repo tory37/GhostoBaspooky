@@ -1,0 +1,1905 @@
+fileFormatVersion: 2
+guid: 9640a0ecb6b092a46a2b6d8d03fae727
+timeCreated: 1434928499
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: armIK.L
+    100004: armIK.L_end
+    100006: armIK.R
+    100008: armIK.R_end
+    100010: brow-angry-sad
+    100012: brow-angry-sad_end
+    100014: browTarget
+    100016: browTarget_end
+    100018: control
+    100020: elbow.L
+    100022: elbow.L_end
+    100024: elbow.R
+    100026: elbow.R_end
+    100028: eye.L
+    100030: eye.L_end
+    100032: eye.R
+    100034: eye.R_end
+    100036: eyeLid.L
+    100038: eyeLid.L_end
+    100040: eyeLid.R
+    100042: eyeLid.R_end
+    100044: eyeTarget
+    100046: eyeTarget.L
+    100048: eyeTarget.R
+    100050: head
+    100052: jaw
+    100054: jaw_end
+    100056: knee.L
+    100058: knee.L_end
+    100060: knee.R
+    100062: knee.R_end
+    100064: legIK.L
+    100066: legIK.L_end
+    100068: legIK.R
+    100070: legIK.R_end
+    100072: lowerArm.L
+    100074: lowerArm.L_end
+    100076: lowerArm.R
+    100078: lowerArm.R_end
+    100080: lowerBody
+    100082: lowerLeg.L
+    100084: lowerLeg.L_end
+    100086: lowerLeg.R
+    100088: lowerLeg.R_end
+    100090: mouth.place
+    100092: mouth.place_end
+    100094: mouth.size
+    100096: mouth.size_end
+    100098: mouth.smile.frown
+    100100: mouth.smile.frown_end
+    100102: treeEnt
+    100104: //RootNode
+    100106: upperArm.L
+    100108: upperArm.R
+    100110: upperBody
+    100112: upperLeg.L
+    100114: upperLeg.R
+    400000: Armature
+    400002: armIK.L
+    400004: armIK.L_end
+    400006: armIK.R
+    400008: armIK.R_end
+    400010: brow-angry-sad
+    400012: brow-angry-sad_end
+    400014: browTarget
+    400016: browTarget_end
+    400018: control
+    400020: elbow.L
+    400022: elbow.L_end
+    400024: elbow.R
+    400026: elbow.R_end
+    400028: eye.L
+    400030: eye.L_end
+    400032: eye.R
+    400034: eye.R_end
+    400036: eyeLid.L
+    400038: eyeLid.L_end
+    400040: eyeLid.R
+    400042: eyeLid.R_end
+    400044: eyeTarget
+    400046: eyeTarget.L
+    400048: eyeTarget.R
+    400050: head
+    400052: jaw
+    400054: jaw_end
+    400056: knee.L
+    400058: knee.L_end
+    400060: knee.R
+    400062: knee.R_end
+    400064: legIK.L
+    400066: legIK.L_end
+    400068: legIK.R
+    400070: legIK.R_end
+    400072: lowerArm.L
+    400074: lowerArm.L_end
+    400076: lowerArm.R
+    400078: lowerArm.R_end
+    400080: lowerBody
+    400082: lowerLeg.L
+    400084: lowerLeg.L_end
+    400086: lowerLeg.R
+    400088: lowerLeg.R_end
+    400090: mouth.place
+    400092: mouth.place_end
+    400094: mouth.size
+    400096: mouth.size_end
+    400098: mouth.smile.frown
+    400100: mouth.smile.frown_end
+    400102: treeEnt
+    400104: //RootNode
+    400106: upperArm.L
+    400108: upperArm.R
+    400110: upperBody
+    400112: upperLeg.L
+    400114: upperLeg.R
+    4300000: treeEnt
+    7400000: TreeEnt_Attack_21
+    7400002: TreeEnt_SpikeAttackPart1_21
+    7400004: TreeEnt_SpikeAttackPart2_21
+    7400006: Armature|empty
+    7400008: TreeEnt_FirstJump_21
+    7400010: TreeEnt_Hover_21
+    7400012: TreeEnt_Hurt_21
+    7400014: TreeEnt_Idle_21
+    7400016: TreeEnt_Land_21
+    7400018: TreeEnt_Run_21
+    7400020: TreeEnt_Walk_21
+    7400022: treeEnt|empty
+    7400024: TreeEnt_SpikeAttackPart3_21
+    9500000: //RootNode
+    13700000: treeEnt
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TreeEnt_Attack_21
+      takeName: Armature|atkCycle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_SpikeAttackPart1_21
+      takeName: Armature|atkPart1
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_SpikeAttackPart2_21
+      takeName: Armature|atkPart2
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|empty
+      takeName: Armature|empty
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_FirstJump_21
+      takeName: Armature|firstJump
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_Hover_21
+      takeName: Armature|hover
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_Hurt_21
+      takeName: Armature|hurt
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_Idle_21
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_Land_21
+      takeName: Armature|land
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_Run_21
+      takeName: Armature|runCycle
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_Walk_21
+      takeName: Armature|walkCycle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: TreeEnt_SpikeAttackPart3_21
+      takeName: Armature|atkPart1
+      firstFrame: 19
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.L/armIK.L_end
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/armIK.R/armIK.R_end
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.L/elbow.L_end
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/elbow.R/elbow.R_end
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.L/knee.L_end
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/knee.R/knee.R_end
+        weight: 1
+      - path: Armature/control/legIK.L
+        weight: 1
+      - path: Armature/control/legIK.L/legIK.L_end
+        weight: 1
+      - path: Armature/control/legIK.R
+        weight: 1
+      - path: Armature/control/legIK.R/legIK.R_end
+        weight: 1
+      - path: Armature/control/lowerBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.L/lowerArm.L/lowerArm.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperArm.R/lowerArm.R/lowerArm.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/brow-angry-sad/brow-angry-sad_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/browTarget/browTarget_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.L/eyeLid.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeLid.R/eyeLid.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.L/eye.L/eye.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/eyeTarget/eyeTarget.R/eye.R/eye.R_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.place/mouth.place_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.size/mouth.size_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown
+        weight: 1
+      - path: Armature/control/lowerBody/upperBody/head/mouth.smile.frown/mouth.smile.frown_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.L/lowerLeg.L/lowerLeg.L_end
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R
+        weight: 1
+      - path: Armature/control/lowerBody/upperLeg.R/lowerLeg.R/lowerLeg.R_end
+        weight: 1
+      - path: treeEnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

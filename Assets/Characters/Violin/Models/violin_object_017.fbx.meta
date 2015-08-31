@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 16c33c530a26e0645af0d3776bab8593
+timeCreated: 1438531119
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body.001
+    100004: body.002
+    100006: body.3
+    100008: bow
+    100010: bow_end
+    100012: brace.004
+    100014: bridge
+    100016: bridge_end
+    100018: eye.L
+    100020: eye.L_end
+    100022: eye.R
+    100024: eye.R_end
+    100026: eyeHappyAngry.L
+    100028: eyeHappyAngry.L_end
+    100030: eyeHappyAngry.R
+    100032: eyeHappyAngry.R_end
+    100034: eyeTarget
+    100036: eyeTarget.L
+    100038: eyeTarget.R
+    100040: holes
+    100042: holes_end
+    100044: neck.001
+    100046: neck.002
+    100048: neck.003
+    100050: neck.003_end
+    100052: violin
+    100054: //RootNode
+    400000: Armature
+    400002: body.001
+    400004: body.002
+    400006: body.3
+    400008: bow
+    400010: bow_end
+    400012: brace.004
+    400014: bridge
+    400016: bridge_end
+    400018: eye.L
+    400020: eye.L_end
+    400022: eye.R
+    400024: eye.R_end
+    400026: eyeHappyAngry.L
+    400028: eyeHappyAngry.L_end
+    400030: eyeHappyAngry.R
+    400032: eyeHappyAngry.R_end
+    400034: eyeTarget
+    400036: eyeTarget.L
+    400038: eyeTarget.R
+    400040: holes
+    400042: holes_end
+    400044: neck.001
+    400046: neck.002
+    400048: neck.003
+    400050: neck.003_end
+    400052: violin
+    400054: //RootNode
+    4300000: violin
+    7400000: Armature|atkPart1
+    7400002: Armature|atkPart2
+    7400004: Armature|atkPart3
+    7400006: Armature|idle
+    7400008: Armature|walkCycle
+    9500000: //RootNode
+    13700000: violin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 90
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

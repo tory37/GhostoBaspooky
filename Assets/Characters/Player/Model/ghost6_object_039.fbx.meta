@@ -1,0 +1,1091 @@
+fileFormatVersion: 2
+guid: bde2a9e4cff2cc541b6df18aa7e0feb4
+timeCreated: 1433385771
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm.L
+    100002: arm.R
+    100004: Armature
+    100006: armIK.L
+    100008: armIK.R
+    100010: backLeg.L
+    100012: backLeg.R
+    100014: backLegIK.L
+    100016: backLegIK.R
+    100018: brow-angry-sad
+    100020: browTarget
+    100022: control
+    100024: elbow.L
+    100026: elbow.R
+    100028: eye.L
+    100030: eye.R
+    100032: eyeTarget
+    100034: eyeTarget.L
+    100036: eyeTarget.R
+    100038: frontLeg.L
+    100040: frontLeg.R
+    100042: frontLegIK.L
+    100044: frontLegIK.R
+    100046: ghost
+    100048: //RootNode
+    100050: head
+    100052: jaw
+    100054: knee.L
+    100056: knee.R
+    100058: lid.L
+    100060: lid.R
+    100062: lips
+    100064: midLeg.L
+    100066: midLeg.R
+    100068: midLegIK.L
+    100070: midLegIK.R
+    100072: mouth.place
+    100074: mouthSize
+    100076: tail
+    400000: arm.L
+    400002: arm.R
+    400004: Armature
+    400006: armIK.L
+    400008: armIK.R
+    400010: backLeg.L
+    400012: backLeg.R
+    400014: backLegIK.L
+    400016: backLegIK.R
+    400018: brow-angry-sad
+    400020: browTarget
+    400022: control
+    400024: elbow.L
+    400026: elbow.R
+    400028: eye.L
+    400030: eye.R
+    400032: eyeTarget
+    400034: eyeTarget.L
+    400036: eyeTarget.R
+    400038: frontLeg.L
+    400040: frontLeg.R
+    400042: frontLegIK.L
+    400044: frontLegIK.R
+    400046: ghost
+    400048: //RootNode
+    400050: head
+    400052: jaw
+    400054: knee.L
+    400056: knee.R
+    400058: lid.L
+    400060: lid.R
+    400062: lips
+    400064: midLeg.L
+    400066: midLeg.R
+    400068: midLegIK.L
+    400070: midLegIK.R
+    400072: mouth.place
+    400074: mouthSize
+    400076: tail
+    4300000: ghost
+    7400000: Armature|Action
+    7400002: Ghost Attack 39
+    7400004: Ghost First Jump 39
+    7400006: Ghost Hover 39
+    7400008: Armature|Idle
+    7400010: Ghost Second Jump 39
+    7400012: Armature|walkCycle
+    7400014: ghost|Action
+    7400016: ghost|hover
+    9500000: //RootNode
+    13700000: ghost
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Action
+      takeName: Armature|Action
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Ghost Attack 39
+      takeName: Armature|atkCycle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Ghost First Jump 39
+      takeName: Armature|firstJump
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Ghost Hover 39
+      takeName: Armature|hover
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Ghost Second Jump 39
+      takeName: Armature|secondJump
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|walkCycle
+      takeName: Armature|walkCycle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ghost|Action
+      takeName: ghost|Action
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ghost|hover
+      takeName: ghost|hover
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/control
+        weight: 1
+      - path: Armature/control/armIK.L
+        weight: 1
+      - path: Armature/control/armIK.R
+        weight: 1
+      - path: Armature/control/backLegIK.L
+        weight: 1
+      - path: Armature/control/backLegIK.R
+        weight: 1
+      - path: Armature/control/elbow.L
+        weight: 1
+      - path: Armature/control/elbow.R
+        weight: 1
+      - path: Armature/control/frontLegIK.L
+        weight: 1
+      - path: Armature/control/frontLegIK.R
+        weight: 1
+      - path: Armature/control/head
+        weight: 1
+      - path: Armature/control/head/arm.L
+        weight: 1
+      - path: Armature/control/head/arm.R
+        weight: 1
+      - path: Armature/control/head/backLeg.L
+        weight: 1
+      - path: Armature/control/head/backLeg.R
+        weight: 1
+      - path: Armature/control/head/brow-angry-sad
+        weight: 1
+      - path: Armature/control/head/browTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.L/eye.L
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R
+        weight: 1
+      - path: Armature/control/head/eyeTarget/eyeTarget.R/eye.R
+        weight: 1
+      - path: Armature/control/head/frontLeg.L
+        weight: 1
+      - path: Armature/control/head/frontLeg.R
+        weight: 1
+      - path: Armature/control/head/jaw
+        weight: 1
+      - path: Armature/control/head/lid.L
+        weight: 1
+      - path: Armature/control/head/lid.R
+        weight: 1
+      - path: Armature/control/head/lips
+        weight: 1
+      - path: Armature/control/head/midLeg.L
+        weight: 1
+      - path: Armature/control/head/midLeg.R
+        weight: 1
+      - path: Armature/control/head/mouth.place
+        weight: 1
+      - path: Armature/control/head/mouthSize
+        weight: 1
+      - path: Armature/control/head/tail
+        weight: 1
+      - path: Armature/control/knee.L
+        weight: 1
+      - path: Armature/control/knee.R
+        weight: 1
+      - path: Armature/control/midLegIK.L
+        weight: 1
+      - path: Armature/control/midLegIK.R
+        weight: 1
+      - path: ghost
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

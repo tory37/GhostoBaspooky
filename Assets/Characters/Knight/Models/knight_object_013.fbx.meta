@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 42d812d4c54716f4dae56bd88e3509eb
+timeCreated: 1437600812
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: armIK.L
+    100004: armIK.L_end
+    100006: armIK.R
+    100008: armIK.R_end
+    100010: Bone
+    100012: chest
+    100014: elbow.L
+    100016: elbow.L_end
+    100018: elbow.R
+    100020: elbow.R_end
+    100022: foot.L
+    100024: foot.L_end
+    100026: foot.R
+    100028: foot.R_end
+    100030: head
+    100032: head_end
+    100034: knee.L
+    100036: knee.L_end
+    100038: knee.R
+    100040: knee.R_end
+    100042: knight
+    100044: //RootNode
+    100046: legIK.L
+    100048: legIK.R
+    100050: lowerArm.L
+    100052: lowerArm.L_end
+    100054: lowerArm.R
+    100056: lowerArm.R_end
+    100058: lowerLeg.L
+    100060: lowerLeg.L_end
+    100062: lowerLeg.R
+    100064: lowerLeg.R_end
+    100066: torso
+    100068: upperArm.L
+    100070: upperArm.R
+    100072: upperLeg.L
+    100074: upperLeg.R
+    400000: Armature
+    400002: armIK.L
+    400004: armIK.L_end
+    400006: armIK.R
+    400008: armIK.R_end
+    400010: Bone
+    400012: chest
+    400014: elbow.L
+    400016: elbow.L_end
+    400018: elbow.R
+    400020: elbow.R_end
+    400022: foot.L
+    400024: foot.L_end
+    400026: foot.R
+    400028: foot.R_end
+    400030: head
+    400032: head_end
+    400034: knee.L
+    400036: knee.L_end
+    400038: knee.R
+    400040: knee.R_end
+    400042: knight
+    400044: //RootNode
+    400046: legIK.L
+    400048: legIK.R
+    400050: lowerArm.L
+    400052: lowerArm.L_end
+    400054: lowerArm.R
+    400056: lowerArm.R_end
+    400058: lowerLeg.L
+    400060: lowerLeg.L_end
+    400062: lowerLeg.R
+    400064: lowerLeg.R_end
+    400066: torso
+    400068: upperArm.L
+    400070: upperArm.R
+    400072: upperLeg.L
+    400074: upperLeg.R
+    4300000: knight
+    7400000: Armature|atkCycle
+    7400002: Armature|hurt
+    7400004: Armature|runCycle
+    7400006: Armature|walkCycle
+    9500000: //RootNode
+    13700000: knight
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

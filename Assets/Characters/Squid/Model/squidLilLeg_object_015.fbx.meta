@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 0e99a94c56ed37c488894de9378e2ca3
+timeCreated: 1437527151
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: backLeg.001.L
+    100004: backLeg.001.R
+    100006: backLeg.002.L
+    100008: backLeg.002.L_end
+    100010: backLeg.002.R
+    100012: backLeg.002.R_end
+    100014: backLegIK.L
+    100016: backLegIK.L_end
+    100018: backLegIK.R
+    100020: backLegIK.R_end
+    100022: backMidLeg.001.L
+    100024: backMidLeg.001.R
+    100026: backMidLeg.002.L
+    100028: backMidLeg.002.L_end
+    100030: backMidLeg.002.R
+    100032: backMidLeg.002.R_end
+    100034: backMidLegIK.L
+    100036: backMidLegIK.L_end
+    100038: backMidLegIK.R
+    100040: backMidLegIK.R_end
+    100042: browShape
+    100044: browShape_end
+    100046: eye.L
+    100048: eye.L_end
+    100050: eye.R
+    100052: eye.R_end
+    100054: eyeShape
+    100056: eyeShape_end
+    100058: eyeTarget
+    100060: eyeTarget.L
+    100062: eyeTarget.R
+    100064: frontLeg.001.L
+    100066: frontLeg.001.R
+    100068: frontLeg.002.L
+    100070: frontLeg.002.L_end
+    100072: frontLeg.002.R
+    100074: frontLeg.002.R_end
+    100076: frontLegIK.L
+    100078: frontLegIK.L_end
+    100080: frontLegIK.R
+    100082: frontLegIK.R_end
+    100084: frontMidLeg.001.L
+    100086: frontMidLeg.001.R
+    100088: frontMidLeg.002.L
+    100090: frontMidLeg.002.L_end
+    100092: frontMidLeg.002.R
+    100094: frontMidLeg.002.R_end
+    100096: frontMidLegIK.L
+    100098: frontMidLegIK.L_end
+    100100: frontMidLegIK.R
+    100102: frontMidLegIK.R_end
+    100104: hat
+    100106: hat_end
+    100108: head
+    100110: mouth
+    100112: mouth_end
+    100114: mouthShape
+    100116: mouthShape_end
+    100118: //RootNode
+    100120: squidLilLegs
+    400000: Armature
+    400002: backLeg.001.L
+    400004: backLeg.001.R
+    400006: backLeg.002.L
+    400008: backLeg.002.L_end
+    400010: backLeg.002.R
+    400012: backLeg.002.R_end
+    400014: backLegIK.L
+    400016: backLegIK.L_end
+    400018: backLegIK.R
+    400020: backLegIK.R_end
+    400022: backMidLeg.001.L
+    400024: backMidLeg.001.R
+    400026: backMidLeg.002.L
+    400028: backMidLeg.002.L_end
+    400030: backMidLeg.002.R
+    400032: backMidLeg.002.R_end
+    400034: backMidLegIK.L
+    400036: backMidLegIK.L_end
+    400038: backMidLegIK.R
+    400040: backMidLegIK.R_end
+    400042: browShape
+    400044: browShape_end
+    400046: eye.L
+    400048: eye.L_end
+    400050: eye.R
+    400052: eye.R_end
+    400054: eyeShape
+    400056: eyeShape_end
+    400058: eyeTarget
+    400060: eyeTarget.L
+    400062: eyeTarget.R
+    400064: frontLeg.001.L
+    400066: frontLeg.001.R
+    400068: frontLeg.002.L
+    400070: frontLeg.002.L_end
+    400072: frontLeg.002.R
+    400074: frontLeg.002.R_end
+    400076: frontLegIK.L
+    400078: frontLegIK.L_end
+    400080: frontLegIK.R
+    400082: frontLegIK.R_end
+    400084: frontMidLeg.001.L
+    400086: frontMidLeg.001.R
+    400088: frontMidLeg.002.L
+    400090: frontMidLeg.002.L_end
+    400092: frontMidLeg.002.R
+    400094: frontMidLeg.002.R_end
+    400096: frontMidLegIK.L
+    400098: frontMidLegIK.L_end
+    400100: frontMidLegIK.R
+    400102: frontMidLegIK.R_end
+    400104: hat
+    400106: hat_end
+    400108: head
+    400110: mouth
+    400112: mouth_end
+    400114: mouthShape
+    400116: mouthShape_end
+    400118: //RootNode
+    400120: squidLilLegs
+    4300000: squidLilLegs
+    7400000: Armature|Action
+    7400002: Armature|flyCycle
+    7400004: Armature|flyHurt
+    7400006: Armature|idle
+    7400008: Armature|leftAtk
+    7400010: Armature|rightAtk
+    7400012: Armature|test
+    7400014: Armature|test.001
+    9500000: //RootNode
+    13700000: squidLilLegs
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
