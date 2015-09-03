@@ -29,7 +29,7 @@ public class GhostoLevelEditor : EditorWindow {
 
 	public Transform previewCube;
 
-	public EditorCube cubeToInstantiate;
+	public LevelCubeObject cubeToInstantiate;
 
 	public Transform cubeParent;
 

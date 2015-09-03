@@ -89,7 +89,7 @@ public class LevelEditorInspector : Editor {
 					if ( GUILayout.Button("X") )
 						levelEditor.cubeTypeMap.Remove(levelEditor.cubeTypeMap[i]);
 
-					levelEditor.cubeTypeMap[i] = EditorGUILayout.ObjectField(levelEditor.cubeTypeMap[i], typeof(EditorCube), false) as EditorCube;
+					levelEditor.cubeTypeMap[i] = EditorGUILayout.ObjectField(levelEditor.cubeTypeMap[i], typeof(LevelCubeObject), false) as LevelCubeObject;
 
 					EditorGUILayout.EndHorizontal();
 				}

@@ -9,7 +9,7 @@ public class LevelContainer : MonoBehaviour {
 
 	#region Editor Interface
 
-	public List<EditorCube> cubeTypeMap;
+	public List<LevelCubeObject> cubeTypeMap;
 
 	#endregion
 
@@ -17,30 +17,30 @@ public class LevelContainer : MonoBehaviour {
 
 	public static LevelContainer Instance;
 
-	public static Dictionary<Vector3, EditorCube> LevelCubes
+	public static Dictionary<Vector3, LevelCubeObject> LevelCubes
 	{
 		get
 		{
 			if ( levelCubes == null )
-				levelCubes = new Dictionary<Vector3, EditorCube>();
+				levelCubes = new Dictionary<Vector3, LevelCubeObject>();
 
 			return levelCubes;
 		}
 		set
 		{
 			if ( levelCubes == null )
-				levelCubes = new Dictionary<Vector3, EditorCube>();
+				levelCubes = new Dictionary<Vector3, LevelCubeObject>();
 
 			levelCubes = value;
 		}
 	}
-	private static Dictionary<Vector3, EditorCube> levelCubes = null;
+	private static Dictionary<Vector3, LevelCubeObject> levelCubes = null;
 
-	public static void AddCube(Vector3 position, Quaternion rotation, EditorCube cubeToInstantiate, Transform cubeParent)
+	public static void AddCube(Vector3 position, Quaternion rotation, LevelCubeObject cubeToInstantiate, Transform cubeParent)
 	{
-		EditorCube newCube = GameObject.Instantiate(cubeToInstantiate, position, rotation) as EditorCube;
+		LevelCubeObject newCube = GameObject.Instantiate(cubeToInstantiate, position, rotation) as LevelCubeObject;
 
-		EditorCube existingCube;
+		LevelCubeObject existingCube;
 
 		if ( LevelCubes.TryGetValue(position, out existingCube) )
 		{
@@ -57,12 +57,12 @@ public class LevelContainer : MonoBehaviour {
 
 	public static void AddCube(SaveData data, Transform cubeParent)
 	{
-		EditorCube cubeToInstantiate = Instance.cubeTypeMap[(int)data.cubeType];
+		LevelCubeObject cubeToInstantiate = Instance.cubeTypeMap[(int)data.cubeType];
 		Vector3 position = new Vector3(data.xPosition, data.yPosition, 0f);
 		//TODO: Serialize rotation as an int, 1 2 3 4 for 0, 90, etc
-		EditorCube newCube = GameObject.Instantiate(cubeToInstantiate, position, Quaternion.identity) as EditorCube;
+		LevelCubeObject newCube = GameObject.Instantiate(cubeToInstantiate, position, Quaternion.identity) as LevelCubeObject;
 
-		EditorCube existingCube;
+		LevelCubeObject existingCube;
 
 		if ( LevelCubes.TryGetValue(position, out existingCube) )
 		{
@@ -88,7 +88,7 @@ public class LevelContainer : MonoBehaviour {
 		public float yPosition;
 		public CubeTypes cubeType;
 
-		public SaveData (EditorCube cube)
+		public SaveData (LevelCubeObject cube)
 		{
 			this.xPosition = cube.transform.position.x;
 			this.yPosition = cube.transform.position.y;

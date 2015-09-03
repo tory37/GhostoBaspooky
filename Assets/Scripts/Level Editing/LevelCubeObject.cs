@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System;
 
-public class EditorCube : MonoBehaviour {
+public class LevelCubeObject : MonoBehaviour {
 
 
 	#region Editor Interface

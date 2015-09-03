@@ -39,14 +39,14 @@ public class LevelEditor : MonoBehaviour {
 	/// The cube that will be previewed and drawn when editing.
 	/// Change this as you please.
 	/// </summary>
-	public EditorCube CubeToDraw
+	public LevelCubeObject CubeToDraw
 	{
 		get { return cubeToDraw; }
 	#if UNITY_EDITOR
 		set { cubeToDraw = value; }
 	#endif
 	}
-	[SerializeField] private EditorCube cubeToDraw;
+	[SerializeField] private LevelCubeObject cubeToDraw;
 
 	/// <summary>
 	/// The transform of the object that the instantiated cubes 
@@ -65,14 +65,14 @@ public class LevelEditor : MonoBehaviour {
 	/// The list of cube prefabs that will be mapped to the index
 	/// number of the cube type enum
 	/// </summary>
-	public List<EditorCube> CubeTypeMap
+	public List<LevelCubeObject> CubeTypeMap
 	{
 		get { return cubeTypeMap; }
 		#if UNITY_EDITOR
 		set { cubeTypeMap = value; }
 		#endif
 	}
-	[SerializeField] public List<EditorCube> cubeTypeMap;
+	[SerializeField] public List<LevelCubeObject> cubeTypeMap;
 
 	/// <summary>
 	/// The UGUI text element that displays the coordinates of 
@@ -95,31 +95,31 @@ public class LevelEditor : MonoBehaviour {
 
 	#region Public Interface
 
-	public static LevelContainer Instance;
+	public static LevelEditor Instance;
 
 	/// <summary>
 	/// A mapping of all the cubes in the level to their "exact" position
 	/// in anticipation of a position being changed by miniscule float
 	/// values
 	/// </summary>
-	public Dictionary<Vector3, EditorCube> LevelCubes
+	public Dictionary<Vector3, LevelCubeObject> LevelCubes
 	{
 		get
 		{
 			if ( levelCubes == null )
-				levelCubes = new Dictionary<Vector3, EditorCube>();
+				levelCubes = new Dictionary<Vector3, LevelCubeObject>();
 
 			return levelCubes;
 		}
 		set
 		{
 			if ( levelCubes == null )
-				levelCubes = new Dictionary<Vector3, EditorCube>();
+				levelCubes = new Dictionary<Vector3, LevelCubeObject>();
 
 			levelCubes = value;
 		}
 	}
-	[SerializeField] private Dictionary<Vector3, EditorCube> levelCubes = null;
+	[SerializeField] private Dictionary<Vector3, LevelCubeObject> levelCubes = null;
 
 	/// <summary>
 	/// Adds a cube to the level, saving a reference in level cube
@@ -128,11 +128,11 @@ public class LevelEditor : MonoBehaviour {
 	/// <param name="rotation"></param>
 	/// <param name="cubeToInstantiate"></param>
 	/// <param name="cubeParent"></param>
-	public void AddCube(Vector3 position, Quaternion rotation, EditorCube cubeToInstantiate)
+	public void AddCube(Vector3 position, Quaternion rotation, LevelCubeObject cubeToInstantiate)
 	{
-		EditorCube newCube = GameObject.Instantiate(cubeToInstantiate, position, rotation) as EditorCube;
+		LevelCubeObject newCube = GameObject.Instantiate(cubeToInstantiate, position, rotation) as LevelCubeObject;
 
-		EditorCube existingCube;
+		LevelCubeObject existingCube;
 
 		if ( LevelCubes.TryGetValue(position, out existingCube) )
 		{
@@ -155,12 +155,12 @@ public class LevelEditor : MonoBehaviour {
 	/// <param name="cubeParent"></param>
 	public void AddCube(SaveData data)
 	{
-		EditorCube cubeToInstantiate = cubeTypeMap[(int)data.cubeType];
+		LevelCubeObject cubeToInstantiate = cubeTypeMap[(int)data.cubeType];
 		Vector3 position = new Vector3(data.xPosition, data.yPosition, 0f);
 		//TODO: Serialize rotation as an int, 1 2 3 4 for 0, 90, etc
-		EditorCube newCube = GameObject.Instantiate(cubeToInstantiate, position, Quaternion.identity) as EditorCube;
+		LevelCubeObject newCube = GameObject.Instantiate(cubeToInstantiate, position, Quaternion.identity) as LevelCubeObject;
 
-		EditorCube existingCube;
+		LevelCubeObject existingCube;
 
 		if ( LevelCubes.TryGetValue(position, out existingCube) )
 		{
@@ -182,7 +182,7 @@ public class LevelEditor : MonoBehaviour {
 	/// <param name="position"></param>
 	public void RemoveCube(Vector3 position)
 	{
-		EditorCube cubeToRemove = null;
+		LevelCubeObject cubeToRemove = null;
 
 		if ( levelCubes.TryGetValue(position, out cubeToRemove) )
 		{
@@ -202,7 +202,7 @@ public class LevelEditor : MonoBehaviour {
 		public float yPosition;
 		public CubeTypes cubeType;
 
-		public SaveData (EditorCube cube)
+		public SaveData (LevelCubeObject cube)
 		{
 			this.xPosition = cube.transform.position.x;
 			this.yPosition = cube.transform.position.y;
@@ -314,7 +314,7 @@ public class LevelEditor : MonoBehaviour {
 	/// <param name="x"></param>
 	/// <param name="y"></param>
 	/// <returns></returns>
-	private Vector3 CubeRound(float x, float y)
+	public static Vector3 CubeRound(float x, float y)
 	{
 		Vector3 point = new Vector3(Mathf.Floor(x), Mathf.Floor(y), 0);
 
@@ -398,7 +398,7 @@ public class LevelEditor : MonoBehaviour {
 
 	void OnEnable()
 	{
-		cubeToDraw = GameObject.Instantiate(cubeToDraw, Vector3.zero, Quaternion.identity) as EditorCube;
+		cubeToDraw = GameObject.Instantiate(cubeToDraw, Vector3.zero, Quaternion.identity) as LevelCubeObject;
 	}
 
 	void OnDisable()
