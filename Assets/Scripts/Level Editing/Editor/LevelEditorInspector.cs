@@ -51,11 +51,11 @@ public class LevelEditorInspector : Editor {
 			{
 				if ( EditorUtility.DisplayDialog("Load Level", "Do you want to clear out the current cubes?", "Clear 'em'", "Keep Them") )
 				{
-					levelEditor.LoadGameplayLevel(levelEditor.FileName, true);
+					levelEditor.LoadLevel(levelEditor.FileName, true);
 				}
 				else
 				{
-					levelEditor.LoadGameplayLevel(levelEditor.FileName, false);
+					levelEditor.LoadLevel(levelEditor.FileName, false);
 				}
 			}
 

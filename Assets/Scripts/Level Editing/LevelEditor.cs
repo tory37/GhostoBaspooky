@@ -287,7 +287,7 @@ public class LevelEditor : MonoBehaviour {
 		return cubesToLoad;
 	}
 
-	public void LoadGameplayLevel(string fileName, bool clearCurrent)
+	public void LoadLevel(string fileName, bool clearCurrent)
 	{
 		SaveData[] cubesToLoad = GetFileData(fileName);
 
