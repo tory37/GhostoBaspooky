@@ -14,48 +14,60 @@ public class LevelEditorInspector : Editor {
 
 	public override void OnInspectorGUI()
 	{
-		LevelEditor levelEditor = (LevelEditor)target;
+		LevelEditor le = (LevelEditor)target;
 
 		EditorGUILayout.LabelField("Testing");
 
-		EditorGUILayout.BeginHorizontal();
-			EditorGUILayout.LabelField("Coordinates Text");
-			levelEditor.CoordinatesText = EditorGUILayout.ObjectField(levelEditor.CoordinatesText, typeof(Text), true) as Text;
-		EditorGUILayout.EndHorizontal();
+		le.CanEdit = EditorGUILayout.Toggle("Can Edit", le.CanEdit);
 
-		EditorGUILayout.BeginHorizontal();
-			EditorGUILayout.LabelField("Styles");
-			levelEditor.styles = EditorGUILayout.ObjectField(levelEditor.styles, typeof(LevelEditorGUIStyles), true) as LevelEditorGUIStyles;
-		EditorGUILayout.EndHorizontal();
+		le.CoordinatesText = EditorGUILayout.ObjectField("Coordinates Text", le.CoordinatesText, typeof(Text), true) as Text;
+
+		le.styles = EditorGUILayout.ObjectField("Styles", le.styles, typeof(LevelEditorGUIStyles), true) as LevelEditorGUIStyles;
+
+		le.LevelCubesParent = EditorGUILayout.ObjectField("Level Cubes Parent", le.LevelCubesParent, typeof(Transform), true) as Transform;
 
 		///Seperator
 		GUILayout.Box("", new GUILayoutOption[]{GUILayout.ExpandWidth(true), GUILayout.Height(1)});
 
-		if ( levelEditor.styles != null )
+		if ( le.styles != null )
 		{
-			EditorGUILayout.BeginVertical(levelEditor.styles.verticalGroupStyle);
+			EditorGUILayout.BeginVertical(le.styles.verticalGroupStyle);
 
-			levelEditor.FileName = EditorGUILayout.TextField("File Name", levelEditor.FileName);
+			le.FileName = EditorGUILayout.TextField("File Name", le.FileName);
+
+			if (GUILayout.Button("List Level Files"))
+			{
+				le.DisplayLevelFileNames();
+			}
 
 			if ( GUILayout.Button("Save Level") )
 			{
-				if ( levelEditor.CheckForExistingFile(levelEditor.FileName) )
+				if ( le.CheckForExistingFile(le.FileName) )
 				{
-					if ( EditorUtility.DisplayDialog("File Exists", "The file '" + levelEditor.FileName + "' already exists, do you want to overwrite it?", "Overwrite", "Cancel") )
-						levelEditor.SaveLevel(levelEditor.FileName);
+					if ( EditorUtility.DisplayDialog("File Exists", "The file '" + le.FileName + "' already exists, do you want to overwrite it?", "Overwrite", "Cancel") )
+						le.SaveLevel(le.FileName);
 				}
 				else
-					levelEditor.SaveLevel(levelEditor.FileName);
+					le.SaveLevel(le.FileName);
 			}
+
 			if ( GUILayout.Button("Load Level") )
 			{
 				if ( EditorUtility.DisplayDialog("Load Level", "Do you want to clear out the current cubes?", "Clear 'em'", "Keep Them") )
 				{
-					levelEditor.LoadLevel(levelEditor.FileName, true);
+					le.LoadLevel(le.FileName, true);
 				}
 				else
 				{
-					levelEditor.LoadLevel(levelEditor.FileName, false);
+					le.LoadLevel(le.FileName, false);
+				}
+			}
+
+			if ( GUILayout.Button("Clear Level") )
+			{
+				if ( EditorUtility.DisplayDialog("Clear Level", "Are you sure you want to remove all cubes from the level?", "Do it", "No Thank You") )
+				{
+					le.ClearCubes();
 				}
 			}
 
@@ -64,7 +76,7 @@ public class LevelEditorInspector : Editor {
 			///Seperator
 			GUILayout.Box("", new GUILayoutOption[]{GUILayout.ExpandWidth(true), GUILayout.Height(1)});
 
-			levelEditor.IsTypemapExpanded = EditorGUILayout.Foldout(levelEditor.IsTypemapExpanded, "Cube Type Map");
+			le.IsTypemapExpanded = EditorGUILayout.Foldout(le.IsTypemapExpanded, "Cube Type Map");
 
 			EditorGUILayout.BeginHorizontal();
 
@@ -72,24 +84,24 @@ public class LevelEditorInspector : Editor {
 
 			if (GUILayout.Button("+"))
 			{
-				if ( indexToAddCubeTypeMap < levelEditor.cubeTypeMap.Count )
-					levelEditor.cubeTypeMap.Insert(indexToAddCubeTypeMap, null);
+				if ( indexToAddCubeTypeMap < le.cubeTypeMap.Count )
+					le.cubeTypeMap.Insert(indexToAddCubeTypeMap, null);
 				else
-					levelEditor.cubeTypeMap.Add(null);
+					le.cubeTypeMap.Add(null);
 			}
 
 			EditorGUILayout.EndHorizontal();
 
-			if (levelEditor.IsTypemapExpanded)
+			if (le.IsTypemapExpanded)
 			{
-				for (int i = 0; i < levelEditor.cubeTypeMap.Count; i++ )
+				for (int i = 0; i < le.cubeTypeMap.Count; i++ )
 				{
 					EditorGUILayout.BeginHorizontal();
 
 					if ( GUILayout.Button("X") )
-						levelEditor.cubeTypeMap.Remove(levelEditor.cubeTypeMap[i]);
+						le.cubeTypeMap.Remove(le.cubeTypeMap[i]);
 
-					levelEditor.cubeTypeMap[i] = EditorGUILayout.ObjectField(levelEditor.cubeTypeMap[i], typeof(LevelCubeObject), false) as LevelCubeObject;
+					le.cubeTypeMap[i] = EditorGUILayout.ObjectField(le.cubeTypeMap[i], typeof(LevelCubeObject), false) as LevelCubeObject;
 
 					EditorGUILayout.EndHorizontal();
 				}

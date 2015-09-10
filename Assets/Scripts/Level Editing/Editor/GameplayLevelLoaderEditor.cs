@@ -12,26 +12,29 @@ public class GameplayLevelLoaderEditor : Editor {
 		gll.LevelToLoadName = EditorGUILayout.TextField("Level File Name", gll.LevelToLoadName);
 		gll.LevelCubesParent = EditorGUILayout.ObjectField("Level Cubes Parent", gll.LevelCubesParent, typeof(Transform), true) as Transform;
 
-		//Check to see if there are any new values in the enum
-		foreach(var value in Enum.GetValues(typeof(CubeTypes)))
-		{
-			if ((int)value > gll.CubePrefabs.Count )
-			{
-				gll.CubePrefabs.Insert((int)value, null);
-			}
-		}
-		//for (int i  = 0; i < gll.CubePrefabs.Count; i++)
-		//{
-		//	if ( !Enum.IsDefined(typeof(CubeTypes), i) )
-		//		gll.CubePrefabs.RemoveAt(i);
-		//}
+		var cubeTypes = Enum.GetValues(typeof(CubeTypes));
+
+		while ( gll.CubePrefabs.Count < cubeTypes.Length )
+			gll.CubePrefabs.Add(null);
+
+		while ( gll.CubePrefabs.Count > cubeTypes.Length )
+			gll.CubePrefabs.RemoveAt(gll.CubePrefabs.Count - 1);
 
 		gll.isMapExpanded = EditorGUILayout.Foldout( gll.isMapExpanded, "Cube Type Prefabs");
+
+		if (GUILayout.Button("List Files"))
+		{
+			gll.DisplayLevelFileNames();
+		}
+
+		if (GUILayout.Button("Load Level"))
+		{
+			gll.LoadLevel();
+		}
 
 		if ( gll.isMapExpanded )
 		{
 
-			var cubeTypes = Enum.GetValues(typeof(CubeTypes));
 			for ( int i = 0; i < gll.CubePrefabs.Count; i++ )
 			{
 				EditorGUILayout.BeginHorizontal();

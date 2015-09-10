@@ -11,14 +11,14 @@ public class DeadZone : MonoBehaviour {
 			{
 				GameObject.Destroy( other.gameObject );
 			}
-            else if (other.transform.GetComponent<GBActor>() != GameMaster.instance.player)
+            else if (other.transform.GetComponent<GBActor>() != GameMaster.Instance.player)
             {
-                PossessionSystem.instance.ExitPossession();
-                GameMaster.instance.player.transform.position = GameMaster.instance.startPosition;
+                PossessionSystem.Instance.ExitPossession();
+                GameMaster.Instance.player.transform.position = GameMaster.Instance.startPosition;
             }
             else
             {
-                other.transform.position = GameMaster.instance.startPosition;
+                other.transform.position = GameMaster.Instance.startPosition;
             }
         }
     }

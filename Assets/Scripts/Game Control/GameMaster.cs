@@ -8,16 +8,17 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameMaster : MonoBehaviour
 {
-	public static GameMaster instance;
+	public static GameMaster Instance { get { return instance; } }
+	private static GameMaster instance;
 	//The function called when the player gets hit
 	public static event Action<int> PlayerGotHit;
 
 	#region Public Interface
 	[Header("Actors")]
 	[Tooltip("The player's BaseActor script")]
-	public BaseController player;
+	public CharacterController player;
 	[Tooltip("The current actor's BaseActor script")]
-	public BaseController currentActor;
+	public CharacterController currentActor;
 
 	[Header("Player Variables")]
 	[Tooltip("Current number of lives")]
@@ -42,7 +43,6 @@ public class GameMaster : MonoBehaviour
 	{
 		instance = this;
 
-		player = GameObject.Find("Player").GetComponent<BaseController>();
 		currentActor = player;
 
 		SetActorSpecificEvents();
@@ -61,13 +61,13 @@ public class GameMaster : MonoBehaviour
 
 	public void SetActorSpecificEvents()
 	{
-		PlayerGotHit += currentActor.RecieveDamage;
+		//PlayerGotHit += currentActor.RecieveDamage;
 	}
 
 	public void ClearActorSpecificEvents()
 	{
-		if ( PlayerGotHit != null )
-			PlayerGotHit -= currentActor.RecieveDamage;
+		//if ( PlayerGotHit != null )
+			//PlayerGotHit -= currentActor.RecieveDamage;
 	}
 
 	public Dictionary<Vector3, LevelCubeObject> LevelCubes

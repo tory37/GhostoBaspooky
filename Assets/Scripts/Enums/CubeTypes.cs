@@ -1,4 +1,4 @@
 ﻿public enum CubeTypes
 {
-	Basic = 1
+	Basic = 0,
 }

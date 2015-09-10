@@ -8,7 +8,8 @@ public class PossessionSystem : MonoBehaviour
 	/// <summary>
 	/// Singleton Instance of the possession system in this scene.
 	/// </summary>
-	public static PossessionSystem instance;
+	public static PossessionSystem Instance { get { return instance; } }
+	private static PossessionSystem instance;
 
 	#region Public Interface
 	[Header( "Possession Variables" )]
@@ -57,7 +58,7 @@ public class PossessionSystem : MonoBehaviour
 		//Debug.Log(Vector3.Angle(currentActor.transform.forward, Vector3.right));
 		if ( !backwardsAnimation )
 		{
-			if ( Vector3.Angle( GameMaster.instance.currentActor.transform.forward, Vector3.right ) < 90 )
+			if ( Vector3.Angle( GameMaster.Instance.currentActor.transform.forward, Vector3.right ) < 90 )
 			{
 				direction = Vector3.right;
 			}
@@ -65,12 +66,12 @@ public class PossessionSystem : MonoBehaviour
 			{
 				direction = Vector3.left;
 			}
-			Debug.DrawRay( GameMaster.instance.currentActor.transform.position + castYOffset, direction * posessionSuckRange, Color.red );
+			Debug.DrawRay( GameMaster.Instance.currentActor.transform.position + castYOffset, direction * posessionSuckRange, Color.red );
 			//Debug.Log(direction);
 		}
 		else
 		{
-			if ( Vector3.Angle( -GameMaster.instance.currentActor.transform.forward, Vector3.right ) < 90 )
+			if ( Vector3.Angle( -GameMaster.Instance.currentActor.transform.forward, Vector3.right ) < 90 )
 			{
 				direction = Vector3.right;
 			}
@@ -78,7 +79,7 @@ public class PossessionSystem : MonoBehaviour
 			{
 				direction = Vector3.left;
 			}
-			Debug.DrawRay( GameMaster.instance.currentActor.transform.position + castYOffset, direction * posessionSuckRange, Color.red );
+			Debug.DrawRay( GameMaster.Instance.currentActor.transform.position + castYOffset, direction * posessionSuckRange, Color.red );
 			//Debug.Log(direction);
 		}
 
@@ -103,7 +104,7 @@ public class PossessionSystem : MonoBehaviour
 		if ( GBInput.GetButtonDown( "Possess" ) )
 		{
 			RaycastHit hit;
-			if ( Physics.Raycast( new Ray( GameMaster.instance.currentActor.transform.position + castYOffset, direction ), out hit, posessionSuckRange ) )
+			if ( Physics.Raycast( new Ray( GameMaster.Instance.currentActor.transform.position + castYOffset, direction ), out hit, posessionSuckRange ) )
 			{
 				if ( hit.collider.GetComponent<BaseController>() )
 				{
@@ -132,7 +133,7 @@ public class PossessionSystem : MonoBehaviour
 		{
 			RaycastHit hit;
 			//If the actual possession raycast hits the target, possession occurs
-			if ( Physics.Raycast( new Ray( GameMaster.instance.currentActor.transform.position + castYOffset, direction ), out hit, possessionCastDistance ) )
+			if ( Physics.Raycast( new Ray( GameMaster.Instance.currentActor.transform.position + castYOffset, direction ), out hit, possessionCastDistance ) )
 			{
 				if ( hit.collider.GetComponent<BaseController>() )
 				{
@@ -140,12 +141,12 @@ public class PossessionSystem : MonoBehaviour
 				}
 			}
 			//If the actual possession raycast does not hit the target, extend it further towards the target
-			else if ( Physics.Raycast( new Ray( GameMaster.instance.currentActor.transform.position + castYOffset, direction ), out hit, posessionSuckRange ) )
+			else if ( Physics.Raycast( new Ray( GameMaster.Instance.currentActor.transform.position + castYOffset, direction ), out hit, posessionSuckRange ) )
 			{
 				if ( hit.collider.GetComponent<BaseController>() )
 				{
 					possessionCastDistance += possessionCastDistanceIncrement;
-					Debug.DrawRay( GameMaster.instance.currentActor.transform.position + castYOffset, direction * possessionCastDistance, Color.green );
+					Debug.DrawRay( GameMaster.Instance.currentActor.transform.position + castYOffset, direction * possessionCastDistance, Color.green );
 				}
 			}
 		}
@@ -158,48 +159,48 @@ public class PossessionSystem : MonoBehaviour
 
 	void Possess( BaseController target )
 	{
-		targetsEnabledAIs.Clear();
+		//targetsEnabledAIs.Clear();
 
-		gettingPossessedTarget = null;
+		//gettingPossessedTarget = null;
 
-		//Player possession sound
-		AudioSource.PlayClipAtPoint( sfxPossess, Camera.main.transform.position, sfxVolumes );
+		////Player possession sound
+		//AudioSource.PlayClipAtPoint( sfxPossess, Camera.main.transform.position, sfxVolumes );
 
-		//Clear the events for the actor being exited
-		GameMaster.instance.ClearActorSpecificEvents();
-		//Exit this actor
-		GameMaster.instance.currentActor.ExitPossessionSpecifics();
+		////Clear the events for the actor being exited
+		//GameMaster.Instance.ClearActorSpecificEvents();
+		////Exit this actor
+		//GameMaster.Instance.currentActor.ExitPossessionSpecifics();
 
-		//Set new actor
-		GameMaster.instance.currentActor = target;
-		//Possess this actor
-		GameMaster.instance.currentActor.PossessionSpecifics();
-		//Set the events for the new actor being controlled
-		GameMaster.instance.SetActorSpecificEvents();
+		////Set new actor
+		//GameMaster.Instance.currentActor = target;
+		////Possess this actor
+		//GameMaster.Instance.currentActor.PossessionSpecifics();
+		////Set the events for the new actor being controlled
+		//GameMaster.Instance.SetActorSpecificEvents();
 	}
 
 	public void ExitPossession()
 	{
-		if ( GameMaster.instance.currentActor != GameMaster.instance.player )
-		{
-			//Play exit possession sound
-			AudioSource.PlayClipAtPoint( sfxExitPossession, Camera.main.transform.position, sfxVolumes );
+		//if ( GameMaster.Instance.currentActor != GameMaster.Instance.player )
+		//{
+		//	//Play exit possession sound
+		//	AudioSource.PlayClipAtPoint( sfxExitPossession, Camera.main.transform.position, sfxVolumes );
 
-			//Move the player object to here
-			GameMaster.instance.player.transform.position = GameMaster.instance.currentActor.transform.position;
+		//	//Move the player object to here
+		//	GameMaster.Instance.player.transform.position = GameMaster.Instance.currentActor.transform.position;
 
 
-			//Clear the events for the actor being exited
-			GameMaster.instance.ClearActorSpecificEvents();
-			//Exit this actor
-			GameMaster.instance.currentActor.ExitPossessionSpecifics();
+		//	//Clear the events for the actor being exited
+		//	GameMaster.Instance.ClearActorSpecificEvents();
+		//	//Exit this actor
+		//	GameMaster.Instance.currentActor.ExitPossessionSpecifics();
 
-			//Set new actor
-			GameMaster.instance.currentActor = GameMaster.instance.player;
-			//Take control of the ghost
-			GameMaster.instance.currentActor.PossessionSpecifics();
-			//Set the events for the new actor being controlled
-			GameMaster.instance.SetActorSpecificEvents();
-		}
+		//	//Set new actor
+		//	GameMaster.Instance.currentActor = GameMaster.Instance.player;
+		//	//Take control of the ghost
+		//	GameMaster.Instance.currentActor.PossessionSpecifics();
+		//	//Set the events for the new actor being controlled
+		//	GameMaster.Instance.SetActorSpecificEvents();
+		//}
 	}
 }

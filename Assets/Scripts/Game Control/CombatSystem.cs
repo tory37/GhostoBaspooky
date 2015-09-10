@@ -24,7 +24,7 @@ public class CombatSystem : MonoBehaviour
             GBActor target = hit.collider.GetComponent<GBActor>();
             if (target)
             {
-                if (target == GameMaster.instance.currentActor)
+                if (target == GameMaster.Instance.currentActor)
                 {
                     GameMaster.PlayerGotHitMethod(meleeAttack.attackDamage);
                 }

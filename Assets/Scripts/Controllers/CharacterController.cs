@@ -207,12 +207,12 @@ public class CharacterController : MonoBehaviour {
 	protected bool OnGround()
 	{
 		Vector3 position = components.rigidBody.position;
-		position = LevelEditor.CubeRound(position.x, position.y);
+		position = LevelEditor.CubeRound(position);
 		Vector3 cubeDirectlyUnderPosition = position - Vector3.up;
 		Debug.Log("Look Position " + cubeDirectlyUnderPosition);
 
 		LevelCubeObject groundedToCube;
-		if ( GameManager.Instance.LevelCubes.TryGetValue(cubeDirectlyUnderPosition, out groundedToCube))
+		if ( GameMaster.Instance.LevelCubes.TryGetValue(cubeDirectlyUnderPosition, out groundedToCube))
 		{
 			return true;
 		}

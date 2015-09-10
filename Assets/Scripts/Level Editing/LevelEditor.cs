@@ -191,6 +191,12 @@ public class LevelEditor : MonoBehaviour {
 		}
 	}
 
+	public void ClearCubes()
+	{
+		foreach ( Transform t in levelCubesParent )
+			DestroyImmediate(t.gameObject);
+	}
+
 	#endregion
 
 	#region Save Load Functions
@@ -216,11 +222,13 @@ public class LevelEditor : MonoBehaviour {
 	/// <param name="fileName"></param>
 	public void SaveLevel(string levelName)
 	{
-		SaveData[] cubesToSave = new SaveData[LevelCubes.Count];
+		SaveData[] cubesToSave = new SaveData[levelCubesParent.childCount];
 		int i = 0;
-		foreach (var cube in LevelCubes.Values)
+		foreach (Transform t in levelCubesParent)
 		{
-			cubesToSave[i] = new SaveData(cube);
+			LevelCubeObject cube = t.GetComponent<LevelCubeObject>();
+			if (cube != null )
+				cubesToSave[i] = new SaveData(cube);
 			i++;
 		}
 
@@ -293,12 +301,24 @@ public class LevelEditor : MonoBehaviour {
 
 		if ( clearCurrent )
 		{
-			levelCubes.Clear();
+			foreach ( Transform t in levelCubesParent )
+				Destroy(t);
 		}
 
 		for ( int i = 0; i < cubesToLoad.Length; i++)
 		{
 			AddCube(cubesToLoad[i]);
+		}
+	}
+
+	public void DisplayLevelFileNames()
+	{
+		string[] files = Directory.GetFiles("Assets/Serialized Level Files/");
+
+		foreach ( string file in files )
+		{
+			if (!file.Contains(".meta"))
+			Debug.Log("Level Name: " + file.Remove(0, 30));
 		}
 	}
 
@@ -314,19 +334,17 @@ public class LevelEditor : MonoBehaviour {
 	/// <param name="x"></param>
 	/// <param name="y"></param>
 	/// <returns></returns>
-	public static Vector3 CubeRound(float x, float y)
+	public static Vector3 CubeRound(Vector3 point)
 	{
-		Vector3 point = new Vector3(Mathf.Floor(x), Mathf.Floor(y), 0);
-
-		GameObject.Find("Coordinates Text").GetComponent<Text>().text = point.ToString();
+		Vector3 roundedPoint = new Vector3(Mathf.Floor(point.x), Mathf.Floor(point.y), 0);
 		 
-		return point;
+		return roundedPoint;
 	}
 
 	private void ShowCubePreview(Vector3 previewCubePosition)
 	{
-		//transparentCube.position = new Vector3(xPosition, yPosition, 0f);
-		cubeToDraw.transform.position = CubeRound(previewCubePosition.x, previewCubePosition.y);
+		cubeToDraw.transform.position = CubeRound(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+		cubeToDraw.transform.SetPositionZ(0);
 	}
 
 	private bool CheckMouseInGameView(Vector3 position)
@@ -353,7 +371,16 @@ public class LevelEditor : MonoBehaviour {
 
 	void Start()
 	{
-		lastPosition = new Vector3(200, 200, 200);
+		lastPosition = Vector3.zero;
+
+		levelCubes = new Dictionary<Vector3, LevelCubeObject>();
+
+		foreach(Transform t in levelCubesParent)
+		{
+			LevelCubeObject cube = t.GetComponent<LevelCubeObject>();
+			if (cube != null )
+				levelCubes.Add(cube.transform.position, cube);
+		}
 	}
 
 	/// <summary>
@@ -364,8 +391,6 @@ public class LevelEditor : MonoBehaviour {
 	{
 		CameraControls();
 
-		//Debug.Log("Edit Level Update Called");
-
 		Rect screenRect = new Rect(0,0, Screen.width, Screen.height);
 
 		if ( canEdit && screenRect.Contains(Input.mousePosition) )
@@ -374,7 +399,7 @@ public class LevelEditor : MonoBehaviour {
 
 			ShowCubePreview(mousePoint);
 
-			Vector3 roundedPoint = CubeRound(cubeToDraw.transform.position.x, cubeToDraw.transform.position.y);
+			Vector3 roundedPoint = CubeRound(cubeToDraw.transform.position);
 
 			if ( Input.GetMouseButton(0) )
 			{

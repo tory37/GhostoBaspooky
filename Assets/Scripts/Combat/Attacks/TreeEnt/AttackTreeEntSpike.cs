@@ -24,7 +24,7 @@ public class AttackTreeEntSpike : BaseAttack {
 
     public override IEnumerator ExecuteAttack()
     {
-        Vector3 targetPosition = GameMaster.instance.currentActor.transform.position;
+        Vector3 targetPosition = GameMaster.Instance.currentActor.transform.position;
 
         Animator anim = GetComponent<Animator>();
 

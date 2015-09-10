@@ -56,13 +56,13 @@ public abstract class BaseController : MonoBehaviour {
 
     public void RecieveDamage(int damage)
     {
-        GameMaster.instance.playerCurrentHealth -= damage;
+        GameMaster.Instance.playerCurrentHealth -= damage;
 
-        GameMaster.instance.healthSlider.value = ((float)GameMaster.instance.playerMaxHealth / 100f) * (float)GameMaster.instance.playerCurrentHealth;
+        GameMaster.Instance.healthSlider.value = ((float)GameMaster.Instance.playerMaxHealth / 100f) * (float)GameMaster.Instance.playerCurrentHealth;
 
-        if (GameMaster.instance.playerCurrentHealth <= 0)
+        if (GameMaster.Instance.playerCurrentHealth <= 0)
         {
-            GameMaster.instance.HealthAtZero();
+            GameMaster.Instance.HealthAtZero();
         }
         else
         {

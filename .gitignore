@@ -36,3 +36,5 @@ Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
 Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll
 Assets/UnityVS.meta
 Assets/UnityVS.meta
+Assets/UnityVS.meta
+Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll

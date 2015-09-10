@@ -7,34 +7,51 @@ using System.Collections.Generic;
 
 public class GameplayLevelLoader : MonoBehaviour {
 
+	#region Editor Interface
+
 	public string LevelToLoadName
 	{
 		get { return levelToLoadName; }
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
 		set {  levelToLoadName = value; }
-#endif
+		#endif
 	}
 	[SerializeField] private string levelToLoadName;
 
 	public Transform LevelCubesParent
 	{
 		get { return levelCubesParent; }
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
 		set {  levelCubesParent = value; }
-#endif
+		#endif
 	}
 	[SerializeField] private Transform levelCubesParent;
 
 	public List<LevelCubeObject> CubePrefabs
 	{
 		get { return cubePrefabs; }
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
 		set {  cubePrefabs = value; }
-#endif
+		#endif
 	}
-	[SerializeField] private List<LevelCubeObject> cubePrefabs;
+	[SerializeField] private List<LevelCubeObject> cubePrefabs = new List<LevelCubeObject>();
 
 	public bool isMapExpanded = false;
+
+	#endregion
+
+	#region Load Functions
+
+	public void DisplayLevelFileNames()
+	{
+		string[] files = Directory.GetFiles("Assets/Serialized Level Files/");
+
+		foreach ( string file in files )
+		{
+			if (!file.Contains(".meta"))
+			Debug.Log("Level Name: " + file.Remove(0, 30));
+		}
+	}
 
 	public LevelEditor.SaveData[] GetFileData( string fileName )
 	{
@@ -61,14 +78,15 @@ public class GameplayLevelLoader : MonoBehaviour {
 		return cubesToLoad;
 	}
 
-	public void LoadLevel(string fileName, bool clearCurrent)
+	public void LoadLevel()
 	{
-		LevelEditor.SaveData[] cubesToLoad = GetFileData(fileName);
+		LevelEditor.SaveData[] cubesToLoad = GetFileData(levelToLoadName);
+		Debug.Log(cubesToLoad.Length);
 
 		foreach ( Transform child in levelCubesParent )
 			Destroy(child);
 
-		for ( int i = 0; i < cubesToLoad.Length; i++)
+		for ( int i = 0; i < cubesToLoad.Length; i++ )
 		{
 			LevelEditor.SaveData save = cubesToLoad[i];
 			int index = (int)save.cubeType;
@@ -77,4 +95,6 @@ public class GameplayLevelLoader : MonoBehaviour {
 			newCube.transform.parent = levelCubesParent;
 		}
 	}
+
+	#endregion
 }
