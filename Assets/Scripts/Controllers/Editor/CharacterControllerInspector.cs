@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(CharacterController))]
+[CustomEditor(typeof(CharacterController), true)]
 public class CharacterControllerInspector : Editor {
 
 

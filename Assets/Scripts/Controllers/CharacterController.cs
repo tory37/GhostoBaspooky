@@ -71,11 +71,6 @@ public class CharacterController : MonoBehaviour {
 	[Serializable]
 	public class AnimationProperties
 	{
-		public string horizontalMovement;
-		public string verticalMovement;
-		public string gotHurt;
-		public string firstJump;
-		public string secondJump;
 		public List<AnimParamInfo> animationChecks = new List<AnimParamInfo>
 		{
 			new AnimParamInfo { paramDescription = "Horizontal Movement", paramName = "", hasParam = false },
@@ -158,29 +153,7 @@ public class CharacterController : MonoBehaviour {
 	#region States
 
 	protected State currentState = null;
-
-	protected State StateFlierMovement;
-	protected void StateFlierMovementEnter()
-	{
-
-	}
-	protected void StateFlierMovementUpdate()
-	{
-		Vector2 input = new Vector2(GBInput.GetAxis("Horizontal"), GBInput.GetAxis("Vertical"));
-		float horizontal =  input.x * pMovement.horizontalSpeed * Time.deltaTime;
-		float vertical =    input.y * pMovement.verticalSpeed * Time.deltaTime;
-
-		Vector3 newPosition = components.rigidBody.position + new Vector3(horizontal, vertical, 0.0f);
-
-		Movement(newPosition, input);
-	}
-	protected void StateFlierMovementExit()
-	{
-
-	}
-
 	
-
 	#endregion
 
 	#region Mono Methods
@@ -213,15 +186,15 @@ public class CharacterController : MonoBehaviour {
 
 	#region Utility Functions
 
-	protected void Movement(Vector3 newPosition, Vector2 input)
+	protected void Move(Vector3 newPosition, Vector2 input)
 	{
 		components.rigidBody.MovePosition(newPosition);
 
 		if (animationChecksDict[PossibleAnimations.HorizontalMovement].hasParam)
-			components.animator.SetFloat(pAnimation.horizontalMovement, input.x);
+			components.animator.SetFloat(animationChecksDict[PossibleAnimations.HorizontalMovement].paramName, Mathf.Abs(input.x));
 
 		if (animationChecksDict[PossibleAnimations.VerticalMovement].hasParam)
-			components.animator.SetFloat(pAnimation.verticalMovement, input.y);
+			components.animator.SetFloat(animationChecksDict[PossibleAnimations.VerticalMovement].paramName, input.y);
 	}
 
 	/// <summary>
@@ -234,9 +207,7 @@ public class CharacterController : MonoBehaviour {
 	protected bool OnGround()
 	{
 		Vector3 position = components.rigidBody.position;
-		Debug.Log("Position " + position);
 		position = LevelEditor.CubeRound(position.x, position.y);
-		Debug.Log("Cube Round Position " + position);
 		Vector3 cubeDirectlyUnderPosition = position - Vector3.up;
 		Debug.Log("Look Position " + cubeDirectlyUnderPosition);
 
@@ -254,6 +225,8 @@ public class CharacterController : MonoBehaviour {
 		//v = sprt((final velocity)^2 + 2 (acceleration) (distance))
 		components.rigidBody.SetVelocityY(Mathf.Sqrt(-2 * Physics.gravity.y * pJump.jumpHeight));
 	}
+
+	protected virtual void Rotate() {}
 
 	#endregion
 

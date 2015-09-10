@@ -3043,24 +3043,19 @@ MonoBehaviour:
     animator: {fileID: 1014950513}
     rotationVectors: {fileID: 1014950510}
   pMovement:
-    horizontalSpeed: 0
+    horizontalSpeed: 2
     verticalSpeed: 0
     groundedDistance: 0
   pJump:
-    jumpHeight: 0
-    canJump: 0
-    maxConsecutiveJumps: 0
+    jumpHeight: 3
+    canJump: 1
+    maxConsecutiveJumps: 2
   pAnimation:
-    horizontalMovement: 
-    verticalMovement: 
-    gotHurt: 
-    firstJump: 
-    secondJump: 
     animationChecks:
     - paramDescription: Horizontal Movement
-      paramName: 
-      hasParam: 0
-      isExpanded: 0
+      paramName: Horizontal
+      hasParam: 1
+      isExpanded: 1
     - paramDescription: Vertical Movement
       paramName: 
       hasParam: 0
@@ -3070,21 +3065,21 @@ MonoBehaviour:
       hasParam: 0
       isExpanded: 0
     - paramDescription: First Jump
-      paramName: 
-      hasParam: 0
-      isExpanded: 0
+      paramName: First Jump
+      hasParam: 1
+      isExpanded: 1
     - paramDescription: Second Jump
-      paramName: 
-      hasParam: 0
-      isExpanded: 0
+      paramName: Second Jump
+      hasParam: 1
+      isExpanded: 1
     - paramDescription: Grounded
-      paramName: 
-      hasParam: 0
-      isExpanded: 0
+      paramName: IsGrounded
+      hasParam: 1
+      isExpanded: 1
   isComponentsExpanded: 0
-  isPMovementExpanded: 0
-  isPJumpExpanded: 0
-  isPAnimationExpanded: 0
+  isPMovementExpanded: 1
+  isPJumpExpanded: 1
+  isPAnimationExpanded: 1
 --- !u!114 &1014950510 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11476258, guid: 358f0dea53c362a448d592e7d66ae0a0,
@@ -4430,7 +4425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 480092, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.00702619553
+      value: .0299999993
       objectReference: {fileID: 0}
     - target: {fileID: 480092, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4458,7 +4453,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5446486, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 480092, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 480092, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 480092, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11439434, guid: 358f0dea53c362a448d592e7d66ae0a0, type: 2}

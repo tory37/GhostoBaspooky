@@ -35,13 +35,10 @@ public class GameManager : MonoBehaviour {
 			if ( cube.GetComponent<LevelCubeObject>() != null )
 			{
 				levelCubes.Add(cube.position, cube.GetComponent<LevelCubeObject>());
-				Debug.Log(cube.position);
 			}
 			else
 				Debug.Log("Child of levelCubesParent does not have a LevelCube component.  Only level cubes should be childed to that transform.", cube);
 		}
-
-		Debug.Log(levelCubes.Count);
 	}
 
 	#endregion
