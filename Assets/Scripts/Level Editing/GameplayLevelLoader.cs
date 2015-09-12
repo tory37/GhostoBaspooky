@@ -84,10 +84,10 @@ public class GameplayLevelLoader : MonoBehaviour {
 		Debug.Log(cubesToLoad.Length);
 
 		foreach ( Transform child in levelCubesParent )
-			Destroy(child);
+			DestroyImmediate(child.gameObject);
 
 		for ( int i = 0; i < cubesToLoad.Length; i++ )
-		{
+		{ 
 			LevelEditor.SaveData save = cubesToLoad[i];
 			int index = (int)save.cubeType;
 			LevelCubeObject newCube = GameObject.Instantiate(cubePrefabs[index], new Vector3(save.xPosition, save.yPosition, 0f), Quaternion.identity) as LevelCubeObject;
