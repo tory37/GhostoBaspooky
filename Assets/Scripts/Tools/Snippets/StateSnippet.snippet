@@ -15,20 +15,36 @@
         <Snippet>
             <Code Language="CSharp">
                 <![CDATA[
-  private State State$StateName$;
-
-  private void State$StateName$Enter()
-  {
-
-  }
-  private void State$StateName$Update()
-  {
-
-  }
-  private void State$StateName$Exit()
-  {
-
-  }
+	public State StateX = new State (
+		//Enter
+		delegate ()
+		{
+			
+		},
+		//Update
+		delegate ()
+		{
+			
+		},
+		//FixedUpdate
+		delegate()
+		{
+			
+		},
+		//LateUpdate
+		delegate()
+		{
+			
+		},
+		//Transitions
+		new Transition[]
+		{
+			new Transition (
+				delegate () { },
+				StateX
+			)
+		}
+	);
 ]]>
             </Code>
         </Snippet>

@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-public class CharacterController : MonoBehaviour {
+public class CharacterController : FSMMonoBehaviour {
 
 	#region Enums
 	
@@ -150,12 +150,6 @@ public class CharacterController : MonoBehaviour {
 
 	#endregion
 
-	#region States
-
-	protected State currentState = null;
-	
-	#endregion
-
 	#region Mono Methods
 
 	protected virtual void Awake()
@@ -169,17 +163,12 @@ public class CharacterController : MonoBehaviour {
 		}
 	}
 
-	protected virtual void OnEnable()
-	{
-		
-	}
-
-	protected void FixedUpdate()
+	protected virtual void Start()
 	{
 		if ( currentState != null )
-			currentState.OnUpdate();
+			currentState.OnEnter();
 		else
-			Debug.LogWarning("Current state is null for " + transform.name, this);
+			Debug.Log("You need to override Start, set currentState, and call base.Start at the end.", this);
 	}
 
 	#endregion

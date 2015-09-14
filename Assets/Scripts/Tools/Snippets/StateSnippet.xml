@@ -8,20 +8,36 @@
         <Snippet>
             <Code Language="">
                 <![CDATA[
-  private State StateX;
-
-  private void StateXEnter()
-  {
-
-  }
-  private void StateXUpdate()
-  {
-
-  }
-  private void StateXExit()
-  {
-
-  }
+	public State StateX = new State (
+		//Enter
+		delegate ()
+		{
+			
+		},
+		//Update
+		delegate ()
+		{
+			
+		},
+		//FixedUpdate
+		delegate()
+		{
+			
+		},
+		//LateUpdate
+		delegate()
+		{
+			
+		},
+		//Transitions
+		new Transition[]
+		{
+			new Transition (
+				delegate () { },
+				StateX
+			)
+		}
+	);
 ]]>
             </Code>
         </Snippet>
