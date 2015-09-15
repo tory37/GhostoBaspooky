@@ -152,7 +152,7 @@ public class CharacterController : FSMMonoBehaviour {
 
 	#region Mono Methods
 
-	protected virtual void Awake()
+	protected override void Awake()
 	{
 		animationChecksDict = new Dictionary<PossibleAnimations, AnimParamInfo>();
 
@@ -161,14 +161,8 @@ public class CharacterController : FSMMonoBehaviour {
 			AnimParamInfo info = pAnimation.animationChecks[i];
 			animationChecksDict.Add((PossibleAnimations)i, info);
 		}
-	}
 
-	protected virtual void Start()
-	{
-		if ( currentState != null )
-			currentState.OnEnter();
-		else
-			Debug.Log("You need to override Start, set currentState, and call base.Start at the end.", this);
+		base.Awake();
 	}
 
 	#endregion
@@ -198,10 +192,9 @@ public class CharacterController : FSMMonoBehaviour {
 		Vector3 position = components.rigidBody.position;
 		position = LevelEditor.CubeRound(position);
 		Vector3 cubeDirectlyUnderPosition = position - Vector3.up;
-		Debug.Log("Look Position " + cubeDirectlyUnderPosition);
 
 		LevelCubeObject groundedToCube;
-		if ( GameMaster.Instance.LevelCubes.TryGetValue(cubeDirectlyUnderPosition, out groundedToCube))
+		if ( GameManager.Instance.LevelCubes.TryGetValue(cubeDirectlyUnderPosition, out groundedToCube))
 		{
 			return true;
 		}

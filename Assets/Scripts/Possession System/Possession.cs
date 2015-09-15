@@ -12,6 +12,20 @@ public class Possession : MonoBehaviour
 	}
 	[SerializeField] private static Possession instance;
 
+	/// <summary>
+	/// The current character being controlled
+	/// </summary>
+	public static CharacterController CurrentCharacter
+	{
+		get { return Instance.currentCharacter; }
+	}
 	#endregion
 
+	#region Editor Interface
+
+	[SerializeField] private CharacterController GhostoPrefab;
+
+	[SerializeField] private CharacterController currentCharacter;
+
+	#endregion
 }
