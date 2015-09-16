@@ -6,23 +6,25 @@ using UnityEngine.UI;
 public class GBInput : MonoBehaviour
 {
 
-	public static GBInput Instance;
+	public static GBInput Instance
+	{ get { return instance; } }
+	private static GBInput instance;
 
 	public List<string> inputNames;
 
 	public Image dPad;
 	public Image dPadCenter;
 
-	private static Dictionary<string, bool> buttonDown;
-	private static Dictionary<string, bool> buttonStay;
-	private static Dictionary<string, bool> buttonUp;
+	private Dictionary<string, bool> buttonDown;
+	private Dictionary<string, bool> buttonStay;
+	private Dictionary<string, bool> buttonUp;
 
-	private static float vertical;
-	private static float horizontal;
+	private float vertical;
+	private float horizontal;
 
 	public void Start ()
 	{
-		Instance = this;
+		instance = this;
 
 		buttonDown = new Dictionary<string, bool>();
 		buttonStay = new Dictionary<string, bool>();
@@ -44,9 +46,9 @@ public class GBInput : MonoBehaviour
 	public static float GetAxis ( string axis )
 	{
 		if ( axis == "Vertical" )
-			return vertical;
+			return Instance.vertical;
 		else if ( axis == "Horizontal" )
-			return horizontal;
+			return Instance.horizontal;
 
 		Debug.LogError( "Axis " + "'" + axis + "' is not setup." );
 		return 0f;
@@ -61,10 +63,10 @@ public class GBInput : MonoBehaviour
 	{
 		try
 		{
-			if ( !buttonStay[ buttonName ] )
+			if ( !Instance.buttonStay[ buttonName ] )
 				return Input.GetButton( buttonName );
 			else
-				return buttonStay[ buttonName ];
+				return Instance.buttonStay[ buttonName ];
 		}
 		catch
 		{
@@ -82,10 +84,10 @@ public class GBInput : MonoBehaviour
 	{
 		try
 		{
-			if ( !buttonDown[ buttonName ] )
+			if ( !Instance.buttonDown[ buttonName ] )
 				return Input.GetButtonDown( buttonName );
 			else
-				return buttonDown[ buttonName ];
+				return Instance.buttonDown[ buttonName ];
 		}
 		catch
 		{
@@ -103,10 +105,10 @@ public class GBInput : MonoBehaviour
 	{
 		try
 		{
-			if ( !buttonUp[ buttonName ] )
+			if ( !Instance.buttonUp[ buttonName ] )
 				return Input.GetButtonUp( buttonName );
 			else
-				return buttonUp[ buttonName ];
+				return Instance.buttonUp[ buttonName ];
 		}
 		catch
 		{
@@ -123,8 +125,8 @@ public class GBInput : MonoBehaviour
 	{
 		try
 		{
-			buttonDown[ inputName ] = true;
-			buttonStay[ inputName ] = true;
+			Instance.buttonDown[ inputName ] = true;
+			Instance.buttonStay[ inputName ] = true;
 			Instance.StartCoroutine( CancelUpAndDown( inputName ) );
 		}
 		catch
@@ -141,8 +143,8 @@ public class GBInput : MonoBehaviour
 	{
 		try
 		{
-			buttonUp[ inputName ] = true;
-			buttonStay[ inputName ] = false;
+			Instance.buttonUp[ inputName ] = true;
+			Instance.buttonStay[ inputName ] = false;
 			Instance.StartCoroutine( CancelUpAndDown( inputName ) );
 		}
 		catch
@@ -159,8 +161,8 @@ public class GBInput : MonoBehaviour
 	{
 		yield return null;
 
-		buttonDown[ inputName ] = false;
-		buttonUp[ inputName ] = false;
+		Instance.buttonDown[ inputName ] = false;
+		Instance.buttonUp[ inputName ] = false;
 	}
 
 	void Update ()

@@ -4,6 +4,14 @@ using System.Collections;
 public class Possession : MonoBehaviour
 {
 
+	#region Editor Interface
+
+	[SerializeField] private CharacterController GhostoPrefab;
+
+	[SerializeField] private CharacterController currentCharacter;
+
+	#endregion
+
 	#region Public Interface
 
 	public static Possession Instance
@@ -19,13 +27,15 @@ public class Possession : MonoBehaviour
 	{
 		get { return Instance.currentCharacter; }
 	}
+
 	#endregion
 
-	#region Editor Interface
+	#region Mono Methods
 
-	[SerializeField] private CharacterController GhostoPrefab;
-
-	[SerializeField] private CharacterController currentCharacter;
+	void Awake()
+	{
+		instance = this;
+	}
 
 	#endregion
 }

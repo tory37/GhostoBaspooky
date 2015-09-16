@@ -63,7 +63,7 @@ public class CharacterController : FSMMonoBehaviour {
 	[Serializable]
 	public class JumpProperties
 	{
-		public float jumpHeight;
+		public int jumpHeight;
 		public bool canJump;
 		public int maxConsecutiveJumps;
 	}

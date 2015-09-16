@@ -43,7 +43,7 @@ public class CharacterControllerInspector : Editor {
 					{
 						controller.PJump.canJump = EditorGUILayout.Toggle("Can Jump", controller.PJump.canJump);
 						controller.PJump.maxConsecutiveJumps = EditorGUILayout.IntField("Max Consecutive Jumps", controller.PJump.maxConsecutiveJumps);
-						controller.PJump.jumpHeight = EditorGUILayout.FloatField("Jump Height", controller.PJump.jumpHeight);
+						controller.PJump.jumpHeight = EditorGUILayout.IntField("Jump Height", controller.PJump.jumpHeight);
 					}
 				}
 
@@ -67,7 +67,7 @@ public class CharacterControllerInspector : Editor {
 					{
 						controller.PJump.canJump = EditorGUILayout.Toggle("Can Jump", controller.PJump.canJump);
 						controller.PJump.maxConsecutiveJumps = EditorGUILayout.IntField("Max Consecutive Jumps", controller.PJump.maxConsecutiveJumps);
-						controller.PJump.jumpHeight = EditorGUILayout.FloatField("Jump Height", controller.PJump.jumpHeight);
+						controller.PJump.jumpHeight = EditorGUILayout.IntField("Jump Height", controller.PJump.jumpHeight);
 					}
 				}
 

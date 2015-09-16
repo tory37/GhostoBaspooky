@@ -24,7 +24,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Vector3 actorPos = GameMaster.Instance.currentActor.transform.position;
+		Vector3 actorPos = Possession.CurrentCharacter.transform.position;
 
 		//Vector3 deltaActorPos = actorPos - lastPosition;
 

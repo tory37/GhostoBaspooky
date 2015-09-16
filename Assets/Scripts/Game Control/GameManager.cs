@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	#region Editor Interface
 
-	public Transform levelCubesParent;
+	[SerializeField] private Transform levelCubesParent;
 
 	#endregion
 
@@ -14,6 +14,11 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager Instance { get { return instance; } }
 	private static GameManager instance;
+
+	public static Transform LevelCubesParent
+	{
+		get { return Instance.levelCubesParent; }
+	}
 
 	/// <summary>
 	/// A dictionary of all the cubes that make up the level,
@@ -61,7 +66,10 @@ public class GameManager : MonoBehaviour {
 		{
 			if ( cube.GetComponent<LevelCubeObject>() != null )
 			{
-				levelCubes.Add(cube.position, cube.GetComponent<LevelCubeObject>());
+				if ( !levelCubes.ContainsKey(cube.position) )
+					levelCubes.Add(cube.position, cube.GetComponent<LevelCubeObject>());
+				else
+					Destroy(cube.gameObject);
 			}
 			else
 				Debug.Log("Child of levelCubesParent does not have a LevelCube component.  Only level cubes should be childed to that transform.", cube);
